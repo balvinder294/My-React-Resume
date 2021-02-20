@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function Blogs() {
   return (
@@ -8,7 +9,7 @@ export function Blogs() {
           <Card.Title className="text-center text-secondary">Blogs</Card.Title>
           <hr />
           <div className="pl-3 ml-2">
-            {blogs.map((value, index) => {
+            {resumeData.blogs.map((value, index) => {
               return (
                 <div key={index}>
                   <b>
@@ -26,26 +27,3 @@ export function Blogs() {
     </>
   );
 }
-
-export const blogs = [
-  {
-    title: "Tekraze.com",
-    url: "https://tekraze.com",
-    description: "Founder and Blogger"
-  },
-  {
-    title: "Techeconomy.in",
-    url: "https://techeconomy.in",
-    description: "Founder and Blogger"
-  },
-  {
-    title: "Medium.com",
-    url: "https://medium.com/@erbalvindersingh",
-    description: "Blogger"
-  },
-  {
-    title: "Dev.to",
-    url: "https://dev.to/balvinder294",
-    description: "Blogger"
-  }
-];

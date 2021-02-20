@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function ProfessionalSkillsList() {
   return (
@@ -19,7 +20,7 @@ export function ProfessionalSkillsList() {
 export function ProfessionalSkill() {
   return (
     <>
-      {ProfessionalSkills.map((value, index) => {
+      {resumeData.professionalSkills.map((value, index) => {
         return (
           <div className="my-2" key={index}>
             <b>{value.title}</b>
@@ -32,19 +33,3 @@ export function ProfessionalSkill() {
     </>
   );
 }
-
-export const ProfessionalSkills = [
-  {
-    title: "Coding Languages",
-    description: "Java, Angular2+, JavaScript, HTML/CSS, Python, Nodejs, React"
-  },
-  {
-    title: "Frameworks/Systems",
-    description:
-      "MVC, JHipster, Spring Boot, bootstrap, Django, ExpressJS, Wordpress, NPM, Yarn, Yeoman, Ionic, Android"
-  },
-  {
-    title: "Database",
-    description: "Cassandra, MongoDb, MySql, Redis"
-  }
-];

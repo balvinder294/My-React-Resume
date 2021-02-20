@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function Links() {
   return (
@@ -16,7 +17,7 @@ export function Links() {
             <br />
             <span>8708986557</span>
             <br />
-            {links.map((value, index) => {
+            {resumeData.links.map((value, index) => {
               return (
                 <div key={index}>
                   <b>{value.title}</b>
@@ -36,29 +37,3 @@ export function Links() {
     </>
   );
 }
-
-export const links = [
-  {
-    title: "Email",
-    value: "balvinder294@gmail.com",
-    link: "mailto:balvinder294@gmail.com"
-  },
-  {
-    title: "LinkedIn",
-    value: "@balvinder-singh-667a908b",
-    link: "https://www.linkedin.com/in/balvinder-singh-667a908b/"
-  },
-  {
-    title: "Address",
-    value: "111, Gali No1, Dhani Sham Lal, Hisar, Haryana. 125001"
-  },
-  {
-    title: "Skype",
-    value: "@balvinder294"
-  },
-  {
-    title: "Github",
-    link: "https://github.com/balvinder294",
-    value: "@balvinder294"
-  }
-];
