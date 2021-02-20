@@ -2,7 +2,7 @@
 Created with CodeSandbox.io
 
 # Preview
-
+<image src="./Screenshot from 2021-02-20 21-58-50.png" alt="Balvinder Singh Resume">
 
 
 [Sandbox Link](https://codesandbox.io/s/vigorous-agnesi-s886n)
