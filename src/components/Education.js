@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function EducationList() {
   return (
@@ -17,7 +18,7 @@ export function EducationList() {
 export function Education() {
   return (
     <>
-      {Educations.map((value, index) => {
+      {resumeData.educations.map((value, index) => {
         return (
           <div className="my-2" key={index}>
             <b>{value.title}</b>
@@ -30,16 +31,3 @@ export function Education() {
     </>
   );
 }
-
-export const Educations = [
-  {
-    title: `Guru Jambheshwar
-    University of Science and
-    Technology`,
-    detail: ["Information Technology 2013-17"]
-  },
-  {
-    title: `New Lahoria Vidya Mandir`,
-    detail: ["12th CBSE 2013", "10th CBSE 2011"]
-  }
-];

@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function PersonalProfile() {
   return (
@@ -7,11 +8,7 @@ export function PersonalProfile() {
         <Card.Body style={{ backgroundColor: "#EDE9D0" }}>
           <Card.Title className="text-secondary">Personal Profile</Card.Title>
           <hr />
-          <p className="pl-1">
-            I am a full stack software developer with robust problem-solving
-            skills and proven experience in creating and designing software in a
-            test-driven environment always looking to work with new things
-          </p>
+          <p className="pl-1 text-muted">{resumeData.profileSummary}</p>
         </Card.Body>
       </Card>
     </div>

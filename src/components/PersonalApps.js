@@ -1,4 +1,5 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { resumeData } from "../data";
 
 export function PersonalApps() {
   return (
@@ -10,7 +11,7 @@ export function PersonalApps() {
             <Row>
               <Col>
                 <ul className="pl-2">
-                  {personalApps.map((value, index) => {
+                  {resumeData.personalApps.map((value, index) => {
                     return (
                       <li key={index}>
                         <a
@@ -32,15 +33,3 @@ export function PersonalApps() {
     </>
   );
 }
-
-export const personalApps = [
-  {
-    title: "Tekraze Blog",
-    url:
-      "https://play.google.com/store/apps/details?id=com.tekraze.blog&hl=en_IN"
-  },
-  {
-    title: "Techeconomy Blog",
-    url: "https://play.google.com/store/apps/details?id=in.techeconomy.blog"
-  }
-];
