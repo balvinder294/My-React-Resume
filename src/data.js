@@ -25,6 +25,16 @@ export const resumeData = {
   ],
   careerSummary: [
     {
+      title: "Lead Full Stack Developer",
+      company: "Dehaze Labs(Formerly dehaze)",
+      date: "July 2021 to current",
+      description: [
+        "Manage the development of application and deployment including front end, back end and servers",
+        "Apis and Frontend design",
+        "Decloud Servers management"
+      ]
+    },
+    {
       title: "Senior Software Engineer",
       company: "Dehaze Labs(Formerly dehaze)",
       date: "March 2019 to present",

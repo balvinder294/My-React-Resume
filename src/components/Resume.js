@@ -62,7 +62,7 @@ export function ResumeHeader() {
           style={{ width: "160px", alignItems: "center" }}
           roundedCircle
           className="img-fluid roundedCircle pb-2"
-          src="profile-pic.png"
+          src="profile-pic.jpg"
         />
       </div>
       <Card className="shadow mt-2">
